@@ -13,8 +13,7 @@ namespace CapaPresentacion
 {
     public partial class Caja : Form
     {
-        //prueba git
-        private int numero;
+        
         public Caja()
         {
             InitializeComponent();
