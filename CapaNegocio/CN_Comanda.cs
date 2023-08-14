@@ -10,9 +10,7 @@ namespace CapaNegocio
 {
    public class CN_Comanda
     {
-
         private CD_Comanda objetoCD = new CD_Comanda();
-
         public DataTable NMostrarComanda(string filtro)
         {
             DataTable tabla = new DataTable();
@@ -22,7 +20,6 @@ namespace CapaNegocio
 
         public void NInsetarComanda(DateTime fechaComanda, string nomCliente, string nomRepartiodor, string observacion, string montoTotal, string montoEfectivo, string montoDebito, string codCaja)
         {
-
             objetoCD.InsetarComanda(fechaComanda, nomCliente, nomRepartiodor, observacion,Convert.ToDecimal(montoTotal),Convert.ToDecimal(montoEfectivo),Convert.ToDecimal(montoDebito),Convert.ToInt64(codCaja));
         }
         public void EditarComanda(string codComanda, DateTime fechaComanda, string nomCliente, string nomRepartiodor, string observacion, string montoTotal, string montoEfectivo, string montoDebito, string codCaja)
@@ -105,12 +102,6 @@ namespace CapaNegocio
             string tot1 = tabla.Rows[0]["Total"].ToString();
             return tot1;
         }
-        /*    public string NMostrarTotalComanda(string filtro)
-        {
-            DataTable tabla = new DataTable();
-            tabla = objetoCD.MostrarTotalComanda(Convert.ToInt64(filtro));
-            string tot=tabla.Rows[0]["montoTotal"].ToString();
-            return tot;
-        }*/
+
     }
 }

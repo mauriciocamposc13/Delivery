@@ -44,7 +44,6 @@ namespace CapaPresentacion
             textNombre.Clear();
             textmontoInicio.Text = "0";
             textmontoCierre.Text = "0";
-
         }
         private void limpiarForm1()
         {
@@ -87,7 +86,6 @@ namespace CapaPresentacion
                 }
             }
         }
-
         private void bEditar_Click(object sender, EventArgs e)
         {
             if (dataGridView1.SelectedRows.Count > 0)
@@ -102,8 +100,7 @@ namespace CapaPresentacion
             }
             else
                 MessageBox.Show("seleccione una fila por favor");
-        }
-    
+        } 
 
         private void bEliminar_Click(object sender, EventArgs e)
         {
@@ -113,7 +110,6 @@ namespace CapaPresentacion
                 limpiarForm();
                 MessageBox.Show("Si seleccionó Editar primero tiene que Guardar para despúes eliminar, Seleccione de nuevo la fila a eliminar");
             }
-
             else if (dataGridView1.SelectedRows.Count > 0)
             {
                 codigoCaja.Text = dataGridView1.CurrentRow.Cells["Código"].Value.ToString();
@@ -140,10 +136,8 @@ namespace CapaPresentacion
             CN_Caja objeto4 = new CN_Caja();
             dataGridView2.DataSource = objeto4.NFiltrarDetalleCaja(filtro);
         }
-
         private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-       //     FiltrarPCaja(Convert.ToDateTime(dataGridView1.CurrentRow.Cells["Fecha"].Value.ToString()));
             codigoCaja.Text = dataGridView1.CurrentRow.Cells["Código"].Value.ToString();
             codigoCaja1.Text= dataGridView1.CurrentRow.Cells["Código"].Value.ToString();
             FiltrarPDetalleCaja(codigoCaja1.Text);
@@ -153,7 +147,6 @@ namespace CapaPresentacion
         {
             numeroDetalleCaja.Text= dataGridView2.CurrentRow.Cells["Número Detalle"].Value.ToString();
         }
-
         private void bGuardar1_Click(object sender, EventArgs e)
         {
             if (Editar1 == false)
@@ -191,7 +184,6 @@ namespace CapaPresentacion
                 }
             }
         }
-
         private void bEditar1_Click(object sender, EventArgs e)
         {
 
@@ -199,11 +191,9 @@ namespace CapaPresentacion
             {
                 Editar1 = true;
                 numeroDetalleCaja.Text = dataGridView2.CurrentRow.Cells["Número Detalle"].Value.ToString();
-
                 textDetalle.Text = dataGridView2.CurrentRow.Cells["Detalle"].Value.ToString();
                 textEfectivo.Text = dataGridView2.CurrentRow.Cells["Efectivo"].Value.ToString();
                 textDebito.Text = dataGridView2.CurrentRow.Cells["Debito"].Value.ToString();
-
             }
             else
                 MessageBox.Show("seleccione una fila por favor");
@@ -217,11 +207,9 @@ namespace CapaPresentacion
                 limpiarForm1();
                 MessageBox.Show("Si seleccionó Editar primero tiene que Guardar para despúes eliminar, Seleccione de nuevo la fila a eliminar");
             }
-
             else if (dataGridView2.SelectedRows.Count > 0)
             {
-                numeroDetalleCaja.Text = dataGridView2.CurrentRow.Cells["Número Detalle"].Value.ToString();
-                
+                numeroDetalleCaja.Text = dataGridView2.CurrentRow.Cells["Número Detalle"].Value.ToString();                
                 objetoCN.NAtualizarCaja2(codigoCaja1.Text, dataGridView2.CurrentRow.Cells["Efectivo"].Value.ToString());
                 objetoCN.NEliminarDetalleCaja(numeroDetalleCaja.Text);
                 MostrarPCaja();
@@ -233,15 +221,12 @@ namespace CapaPresentacion
                 MessageBox.Show("seleccione una fila por favor");
             Editar1 = false;
         }
-
         private void bTodas_Click(object sender, EventArgs e)
         {
             MostrarPCaja();
         }
-
         private void bVender_Click(object sender, EventArgs e)
         {
-
             if (codigoCaja1.Text != "")
             {
                 Venta vend = new Venta();
@@ -249,18 +234,12 @@ namespace CapaPresentacion
                 vend.Show();
             }
             else MessageBox.Show("Seleccione una Caja");
-
         }
-
         private void bActualizar_Click(object sender, EventArgs e)
         {if (codigoCaja1.Text != "") {
-                FiltrarPDetalleCaja(codigoCaja1.Text);
-                
+                FiltrarPDetalleCaja(codigoCaja1.Text);                
             }
             else MessageBox.Show("Seleccione una Caja");
-
         }
-
-
     }
 }

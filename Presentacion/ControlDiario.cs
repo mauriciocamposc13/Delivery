@@ -23,7 +23,6 @@ namespace CapaPresentacion
             CN_Comanda objeto = new CN_Comanda();
             dataGridView1.DataSource = objeto.NControlDiarioProducto(filtro);
         }
-
         private void ControlDiarioProductoFiltro(DateTime filtro1, DateTime filtro2, String filtro3)
         {
             CN_Comanda objeto = new CN_Comanda();
@@ -57,19 +56,16 @@ namespace CapaPresentacion
             ControlDiarioProducto(DateTime.Now);
             ControlDiarioComida(DateTime.Now);
         }
-
         private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
         {
             ControlDiarioProducto(dateTimePicker1.Value);
             ControlDiarioComida(dateTimePicker1.Value);
         }
-
         private void button1_Click(object sender, EventArgs e)
         {
             ControlDiarioProductoFiltro(dateTimePicker2.Value, dateTimePicker3.Value, textBox1.Text);
             ControlDiarioProductoFiltroSumador(dateTimePicker2.Value, dateTimePicker3.Value, textBox1.Text);
         }
-
         private void button2_Click(object sender, EventArgs e)
         {
             ControlDiarioComidaFiltro(dateTimePicker2.Value, dateTimePicker3.Value, textBox1.Text);

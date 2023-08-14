@@ -18,8 +18,6 @@ namespace CapaPresentacion
         }
         CN_Producto objetoCN = new CN_Producto();
         private bool Editar = false;
-
-
         private void Productos_Load(object sender, EventArgs e)
         {
             numero.Text = "";
@@ -48,10 +46,7 @@ namespace CapaPresentacion
             textSEx.Clear();
             dateTimeVto.Value = DateTime.Today;
             textCategoria.Clear();
-        }
-
-
-       
+        }       
         private void bGuardar_Click(object sender, EventArgs e)
         {
             if (Editar == false)

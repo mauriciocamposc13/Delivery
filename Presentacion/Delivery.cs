@@ -64,5 +64,10 @@ namespace CapaPresentacion
             ControlDiario con = new ControlDiario();
             con.Show();
         }
+
+        private void Delivery_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

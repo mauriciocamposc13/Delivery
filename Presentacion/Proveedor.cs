@@ -13,7 +13,6 @@ namespace CapaPresentacion
     public partial class Proveedor : Form
     {
         CN_Proveedor objetoCN = new CN_Proveedor();
-
         private bool Editar = false;
         public Proveedor()
         {
@@ -31,7 +30,6 @@ namespace CapaPresentacion
             textnomEmpl.Clear();
             texttelProv.Clear();
             textdomProv.Clear();
-
         }
         private void Proveedor_Load(object sender, EventArgs e)
         {

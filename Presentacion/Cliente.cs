@@ -19,7 +19,6 @@ namespace CapaPresentacion
         }
         CN_Cliente objetoCN = new CN_Cliente();
         private bool Editar = false;
-
         private void Cliente_Load(object sender, EventArgs e)
         {
             MostrarClien();
@@ -71,7 +70,6 @@ namespace CapaPresentacion
                 }
             }
         }
-
         private void bEditar_Click(object sender, EventArgs e)
         {
             if (dataGridView1.SelectedRows.Count > 0)
@@ -81,7 +79,6 @@ namespace CapaPresentacion
                 textNombre.Text= dataGridView1.CurrentRow.Cells["Nombre"].Value.ToString();
                 textTel.Text = dataGridView1.CurrentRow.Cells["Teléfono"].Value.ToString();
                 textDesc.Text = dataGridView1.CurrentRow.Cells["Domicilio"].Value.ToString();
-
             }
             else
                 MessageBox.Show("seleccione una fila por favor");
@@ -108,15 +105,9 @@ namespace CapaPresentacion
                 MessageBox.Show("seleccione una fila por favor");
             Editar = false;
         }
-
         private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             codCliente.Text = dataGridView1.CurrentRow.Cells["Número"].Value.ToString();
         }
-    }
-
-   
-
-       
-    
+    }     
 }

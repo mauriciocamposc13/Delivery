@@ -11,7 +11,6 @@ namespace CapaNegocio
 {
    public class CN_Cliente
     {
-
         private CD_Cliente objetoCD = new CD_Cliente();
 
         public DataTable MostrarNCliente()
@@ -23,7 +22,6 @@ namespace CapaNegocio
 
         public void InsertarNCliente( string nomCliente, string telCliente, string domCliente)
         {
-
             objetoCD.InsertarDCliente(nomCliente, telCliente, domCliente);
         }
         public void EditarNCliente(string codCliente, string nomCliente, string telCliente, string domCliente)

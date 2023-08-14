@@ -16,7 +16,6 @@ namespace CapaDatos
 
         public DataTable MostrarDProveedor()
         {
-
             comando.Connection = conexion.AbrirConexion();
             comando.CommandText = "MostrarProveedor";
             comando.CommandType = CommandType.StoredProcedure;
@@ -27,7 +26,6 @@ namespace CapaDatos
         }
         public void InsertarDProveedor(string nomProv, string nomEmpl, string telProv, string domProv)
         {
-
             comando.Connection = conexion.AbrirConexion();
             comando.CommandText = "InsetarProveedor";
             comando.CommandType = CommandType.StoredProcedure;
@@ -41,7 +39,6 @@ namespace CapaDatos
         }
         public void EditarDProveedor(Int32 codProveedor, string nomProv, string nomEmpl, string telProv, string domProv)
         {
-
             comando.Connection = conexion.AbrirConexion();
             comando.CommandText = "EditarProveedor";
             comando.CommandType = CommandType.StoredProcedure;

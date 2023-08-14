@@ -76,8 +76,7 @@ namespace CapaDatos
             conexion.CerrarConexion();
         }
 
-        /////////////////DETALLE CAJA
-        ///
+        //DETALLE CAJA
         public DataTable FiltrarDetalleCaja(Int64 filtro)
         {
             comando.Connection = conexion.AbrirConexion();
@@ -90,7 +89,7 @@ namespace CapaDatos
             return tabla;
         }
         public void InsetarDetalleCaja(string detalle, Decimal montoEfectivo, Decimal montoDebito,Int64 codCaja)
-        {//@detalle,@montoEfectivo,@montoDebito,@codCaja
+        {
             comando.Connection = conexion.AbrirConexion();
             comando.CommandText = "InsetarDetalleCaja";
             comando.CommandType = CommandType.StoredProcedure;
@@ -117,8 +116,6 @@ namespace CapaDatos
             comando.Parameters.Clear();
             conexion.CerrarConexion();
         }
-
-
         public void EliminarDetalleCaja(Int64 codDCaja)
         {
             comando.Connection = conexion.AbrirConexion();
@@ -129,8 +126,6 @@ namespace CapaDatos
             comando.Parameters.Clear();
             conexion.CerrarConexion();
         }
-
-
         public void AtualizarCaja(Int64 codCaja, Decimal montoCierre)
         {
             comando.Connection = conexion.AbrirConexion();
@@ -142,12 +137,6 @@ namespace CapaDatos
             comando.Parameters.Clear();
             conexion.CerrarConexion();
         }
-
-
-
-
-
-
 
     }
 }

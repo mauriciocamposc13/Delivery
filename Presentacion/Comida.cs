@@ -19,7 +19,6 @@ namespace CapaPresentacion
         }
         CN_Comida objetoCN = new CN_Comida();
         private bool Editar = false;
-
         private void Comida_Load(object sender, EventArgs e)
         {
             numero.Text = "";
@@ -75,9 +74,7 @@ namespace CapaPresentacion
                     MessageBox.Show("No se pudo editar por: " + ex);
                 }
             }
-
         }
-
         private void bEditar_Click(object sender, EventArgs e)
         {
             if (dataGridView1.SelectedRows.Count > 0)
@@ -94,7 +91,6 @@ namespace CapaPresentacion
             else
                 MessageBox.Show("seleccione una fila por favor");
         }
-
         private void bEliminar_Click(object sender, EventArgs e)
         {
             if (Editar == true)
@@ -103,7 +99,6 @@ namespace CapaPresentacion
                 limpiarForm();
                 MessageBox.Show("Si seleccionó Editar primero tiene que Guardar para despúes eliminar, Seleccione de nuevo la fila a eliminar");
             }
-
             else if (dataGridView1.SelectedRows.Count > 0)
             {
                 numero.Text = dataGridView1.CurrentRow.Cells["Número"].Value.ToString();
@@ -125,7 +120,6 @@ namespace CapaPresentacion
         {
             numero.Text = dataGridView1.CurrentRow.Cells["Número"].Value.ToString();
         }
-
         private void button4_Click(object sender, EventArgs e)
         {
             FiltrarPComida(textFiltro.Text);

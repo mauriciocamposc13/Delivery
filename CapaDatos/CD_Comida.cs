@@ -9,9 +9,7 @@ using System.Threading.Tasks;
 namespace CapaDatos
 {
     public class CD_Comida
-    {
-
-        
+    {                
         private CD_Conexion conexion = new CD_Conexion();
         SqlDataReader leer;
         DataTable tabla = new DataTable();
@@ -38,8 +36,7 @@ namespace CapaDatos
             return tabla;
         }
         public void InsertarComida(string codComida, string codBarraComida, string nomComida, Decimal pCosto,Decimal pVenta, string descComida)
-        {//@codComida,@codBarraComida,@nomComida,@pCosto,@pVenta,@descComida
-
+        {
             comando.Connection = conexion.AbrirConexion();
             comando.CommandText = "InsetarComida";
             comando.CommandType = CommandType.StoredProcedure;
@@ -56,7 +53,6 @@ namespace CapaDatos
 
         public void EditarComida(Int32 numComida, string codComida, string codBarraComida, string nomComida, Decimal pCosto, Decimal pVenta, string descComida)
         {
-
             comando.Connection = conexion.AbrirConexion();
             comando.CommandText = "EditarComida";
             comando.CommandType = CommandType.StoredProcedure;
@@ -93,8 +89,5 @@ namespace CapaDatos
             conexion.CerrarConexion();
             return tabla;
         }
-
-
-
     }
 }

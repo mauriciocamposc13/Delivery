@@ -12,21 +12,16 @@ namespace CapaNegocio
 {
    public class CN_IngresoEgreso
     {
-
-        //INGRESO
-        
-        //(Int64 codIngreso, DateTime fchIngreso, Decimal montoIngreso, string descIngreso)
+        //INGRESO        
         private CD_IngresoEgreso objetoCD = new CD_IngresoEgreso();
         public DataTable NMostrarIngreso()
         {
             DataTable tabla = new DataTable();
             tabla = objetoCD.MostrarIngreso();
             return tabla;
-        }
-      
+        }      
         public void NInsetarIngreso(DateTime fchIngreso, string montoIngreso, string descIngreso,string categoria)
         {
-
             objetoCD.InsetarIngreso(fchIngreso,Convert.ToDecimal(montoIngreso), descIngreso,categoria);
         }
         public void NEditarIngreso(string codIngreso,DateTime fchIngreso, string montoIngreso, string descIngreso,string categoria)
@@ -47,7 +42,6 @@ namespace CapaNegocio
 
         public void NInsetarEgreso(DateTime fchEgreso, string montoEgreso, string descEgreso,string categoria)
         {
-
             objetoCD.InsetarEgreso(fchEgreso, Convert.ToDecimal(montoEgreso), descEgreso,categoria);
         }
         public void NEditarEgreso(string codEgreso, DateTime fchEgreso, string montoEgreso, string descEgreso,string categoria)

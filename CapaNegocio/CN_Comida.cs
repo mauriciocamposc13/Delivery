@@ -26,7 +26,6 @@ namespace CapaNegocio
         }
         public void NInsertarComida(string codComida, string codBarraComida, string nomComida, string pCosto, string pVenta, string descComida)
         {
-
             objetoCD.InsertarComida(codComida, codBarraComida, nomComida, Convert.ToDecimal(pCosto), Convert.ToDecimal(pVenta), descComida);
         }
         public void NEditarComida(string numComida,string codComida, string codBarraComida, string nomComida, string pCosto, string pVenta, string descComida)
@@ -44,8 +43,5 @@ namespace CapaNegocio
             tabla = objetoCD.FiltrarComidaComanda(filtro);
             return tabla;
         }
-
-
-
     }
 }

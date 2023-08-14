@@ -36,7 +36,7 @@ namespace CapaDatos
             return tabla;
         }
         public void InsertarProducto(string codProd, string codBarra, string nomProd, string marca,Decimal pCosto,Decimal pVenta,string descProd, decimal stockMin, decimal stockExis,DateTime  fchVto,string categoria)
-        {//fchVto date
+        {
             comando.Connection = conexion.AbrirConexion();
             comando.CommandText = "InsetarProducto";
             comando.CommandType = CommandType.StoredProcedure;
@@ -135,8 +135,5 @@ namespace CapaDatos
             conexion.CerrarConexion();
             return tabla;
         }
-
-
-
     }
 }

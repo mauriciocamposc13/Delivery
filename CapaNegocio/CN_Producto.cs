@@ -26,7 +26,6 @@ namespace CapaNegocio
         }
         public void NInsertarProducto(string codProd, string codBarra, string nomProd, string marca, string pCosto, string pVenta, string descProd, string stockMin, string stockExis, DateTime fchVto,string categoria)
         {
-
             objetoCD.InsertarProducto(codProd, codBarra, nomProd, marca,Convert.ToDecimal(pCosto), Convert.ToDecimal(pVenta), descProd, Convert.ToDecimal(stockMin), Convert.ToDecimal(stockExis),fchVto, categoria);
         }
         public void NEditarProducto(string codProducto, string codProd, string codBarra, string nomProd, string marca, string pCosto, string pVenta, string descProd, string stockMin, string stockExis, DateTime fchVto,string categoria)
@@ -37,7 +36,6 @@ namespace CapaNegocio
         {
             objetoCD.EliminarProducto(Convert.ToInt32(codProducto));
         }
-
         public DataTable NMostrarProductoFaltante()
         {
             DataTable tabla = new DataTable();
@@ -56,7 +54,6 @@ namespace CapaNegocio
         {
             objetoCD.ActualizarProducto(Convert.ToInt32(codProducto),Convert.ToDecimal(cantidad));
         }
-
         public string NFiltrarProductoSumador(string filtro)
         {
             DataTable tabla = new DataTable();
@@ -71,6 +68,5 @@ namespace CapaNegocio
             string tot2 = tabla.Rows[0]["Totalventa"].ToString();
             return tot2;
         }
-
     }
 }

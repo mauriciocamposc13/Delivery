@@ -103,8 +103,6 @@ namespace CapaDatos
         }
 
         //DETALLE COMANDA
-
-
         public DataTable MostrarDetalleComanda(Int64 filtro)
         {
 

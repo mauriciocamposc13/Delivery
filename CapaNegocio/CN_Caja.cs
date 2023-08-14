@@ -28,13 +28,11 @@ namespace CapaNegocio
    
         public void NInsertarCaja(DateTime fecha,string nomEmpleado, string montoInicio, string montoCierre)
         {
-
             objetoCD.InsertarCaja(fecha, nomEmpleado,  Convert.ToDecimal(montoInicio), Convert.ToDecimal(montoCierre));
         }
 
         public void NEditarCaja(string codCaja, DateTime fecha, string nomEmpleado, string montoInicio, string montoCierre)
         {
-
             objetoCD.EditarCaja(Convert.ToInt64(codCaja), fecha, nomEmpleado, Convert.ToDecimal(montoInicio), Convert.ToDecimal(montoCierre));
         }
         public void NEliminarCaja(string codCaja)
@@ -44,7 +42,6 @@ namespace CapaNegocio
 
         public void NAtualizarCaja(string codCaja, string montoCierre)
         {
-
             objetoCD.AtualizarCaja(Convert.ToInt64(codCaja),  Convert.ToDecimal(montoCierre));
         }
         public void NAtualizarCaja2(string codCaja, string montoCierre)
@@ -62,7 +59,6 @@ namespace CapaNegocio
         }
 
         ////////Detalle Caja
-
         public DataTable NFiltrarDetalleCaja(string filtro)
         {
             DataTable tabla = new DataTable();
@@ -71,19 +67,16 @@ namespace CapaNegocio
         }
         public void NInsertarDetalleCaja(string detalle, string montoEfectivo, string montoDebito, string codCaja)
         {
-
             objetoCD.InsetarDetalleCaja(detalle, Convert.ToDecimal(montoEfectivo), Convert.ToDecimal(montoDebito), Convert.ToInt64(codCaja));
         }
 
         public void NEditarDetalleCaja(string codDCaja, string detalle, string montoEfectivo, string montoDebito, string codCaja)
         {
-
             objetoCD.EditarDetalleCaja(Convert.ToInt64(codDCaja), detalle, Convert.ToDecimal(montoEfectivo), Convert.ToDecimal(montoDebito),Convert.ToInt64(codCaja));
         }
         public void NEliminarDetalleCaja(string codDCaja)
         {
             objetoCD.EliminarDetalleCaja(Convert.ToInt64(codDCaja));
         }
-
     }
 }

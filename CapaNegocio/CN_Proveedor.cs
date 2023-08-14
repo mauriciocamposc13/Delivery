@@ -19,7 +19,6 @@ namespace CapaNegocio
         }
         public void InsertarNProveedor(string nomProv, string nomEmpl, string telProv, string domProv)
         {
-
             objetoCD.InsertarDProveedor( nomProv, nomEmpl, telProv, domProv);
         }
         public void EditarNProveedor(string codProveedor, string nomProv, string nomEmpl, string telProv, string domProv)
@@ -30,7 +29,5 @@ namespace CapaNegocio
         {
             objetoCD.EliminarDProveedor(Convert.ToInt32(codProveedor));
         }
-
-
     }
 }

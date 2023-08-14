@@ -10,8 +10,6 @@ namespace CapaNegocio
 {
    public class CN_Repartidor
     {
-
-
         private CD_Repartidor objetoCD = new CD_Repartidor();
 
         public DataTable MostrarNRepartidor()
@@ -23,7 +21,6 @@ namespace CapaNegocio
 
         public void InsertarNRepartidor(string nomRepartidor, string telRepartidor, string domRepartidor)
         {
-
             objetoCD.InsertarDRepartidor(nomRepartidor, telRepartidor, domRepartidor);
         }
         public void EditarNRepartidor(string codRepartidor, string nomRepartidor, string telRepartidor, string domRepartidor)
@@ -40,6 +37,5 @@ namespace CapaNegocio
             tabla = objetoCD.FiltrarDRepartidor(filtro);
             return tabla;
         }
-
     }
 }

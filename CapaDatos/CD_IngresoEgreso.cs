@@ -25,8 +25,7 @@ namespace CapaDatos
             tabla.Load(leer);
             conexion.CerrarConexion();
             return tabla;
-        }
-    
+        }    
         public void InsetarIngreso(DateTime fchIngreso, Decimal montoIngreso, string descIngreso, string categoria)
         {
             comando.Connection = conexion.AbrirConexion();

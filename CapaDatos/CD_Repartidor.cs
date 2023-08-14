@@ -16,7 +16,6 @@ namespace CapaDatos
 
         public DataTable MostrarDRepartidor()
         {
-
             comando.Connection = conexion.AbrirConexion();
             comando.CommandText = "MostrarRepartidor";
             comando.CommandType = CommandType.StoredProcedure;
@@ -63,7 +62,6 @@ namespace CapaDatos
 
         public DataTable FiltrarDRepartidor(string filtro)
         {
-
             comando.Connection = conexion.AbrirConexion();
             comando.CommandText = "FiltarRepartidor";
             comando.CommandType = CommandType.StoredProcedure;

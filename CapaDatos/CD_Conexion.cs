@@ -9,9 +9,8 @@ namespace CapaDatos
 {
     class CD_Conexion
     {
-
-       private SqlConnection Conexion = new SqlConnection(@"Server=DESKTOP-F6G0EHJ;DataBase=Delivery;integrated security= true");
-      // private SqlConnection Conexion = new SqlConnection("Server=.;DataBase=Delivery;integrated security= true");
+        //Aca se configura la cadena de conexion desde la instancia de base de datos local en una Base de datos llamada Delivery con las credeciales de Windows
+       private SqlConnection Conexion = new SqlConnection("Server=.;DataBase=Delivery;integrated security= true");
         public SqlConnection AbrirConexion()
         {
             if (Conexion.State == ConnectionState.Closed)
