@@ -1,0 +1,6 @@
+El proyecto Delivery esta creado en base a un delivery real teniendo en cuenta las necesidades que pueda llegar a tener el mismo.
+El proyecto esta creado en el IDE Visual Studio.
+Utiliza una base de datos en una instancia local de Microsoft SQL Server con credenciales de Windows.
+Utiliza procedimientos almacenados para realizar inserciones, actualizaciones y eliminación de los registros.
+En la carpeta hay un BackUp con datos de prueba, tablas y procedimientos almacenados sobre una base de datos llamada 'Delivery' 
+(Es necesario que hacer el BackUp antes de realizar la ejecución del proyecto que inicia en la capa de presentacion en el FORM llamado Delivery).
