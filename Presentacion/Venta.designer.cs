@@ -33,7 +33,6 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.bActualizar = new System.Windows.Forms.Button();
-            this.bImprimir = new System.Windows.Forms.Button();
             this.bACaja = new System.Windows.Forms.Button();
             this.dataGridView3 = new System.Windows.Forms.DataGridView();
             this.bADetalle = new System.Windows.Forms.Button();
@@ -79,7 +78,6 @@
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.bActualizar);
-            this.groupBox1.Controls.Add(this.bImprimir);
             this.groupBox1.Controls.Add(this.bACaja);
             this.groupBox1.Controls.Add(this.dataGridView3);
             this.groupBox1.Controls.Add(this.bADetalle);
@@ -124,16 +122,6 @@
             this.bActualizar.Text = "Actualizar";
             this.bActualizar.UseVisualStyleBackColor = true;
             this.bActualizar.Click += new System.EventHandler(this.bActualizar_Click);
-            // 
-            // bImprimir
-            // 
-            this.bImprimir.Location = new System.Drawing.Point(81, 620);
-            this.bImprimir.Name = "bImprimir";
-            this.bImprimir.Size = new System.Drawing.Size(124, 46);
-            this.bImprimir.TabIndex = 27;
-            this.bImprimir.Text = "Imprimir";
-            this.bImprimir.UseVisualStyleBackColor = true;
-            this.bImprimir.Click += new System.EventHandler(this.bImprimir_Click);
             // 
             // bACaja
             // 
@@ -258,7 +246,7 @@
             this.label13.AutoSize = true;
             this.label13.Location = new System.Drawing.Point(26, 34);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(39, 17);
+            this.label13.Size = new System.Drawing.Size(36, 16);
             this.label13.TabIndex = 0;
             this.label13.Text = "Filtro";
             // 
@@ -311,7 +299,7 @@
             this.label12.AutoSize = true;
             this.label12.Location = new System.Drawing.Point(29, 36);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(39, 17);
+            this.label12.Size = new System.Drawing.Size(36, 16);
             this.label12.TabIndex = 0;
             this.label12.Text = "Filtro";
             // 
@@ -370,7 +358,7 @@
             this.lnro.AutoSize = true;
             this.lnro.Location = new System.Drawing.Point(111, 86);
             this.lnro.Name = "lnro";
-            this.lnro.Size = new System.Drawing.Size(54, 17);
+            this.lnro.Size = new System.Drawing.Size(51, 16);
             this.lnro.TabIndex = 10;
             this.lnro.Text = "label11";
             // 
@@ -379,7 +367,7 @@
             this.label11.AutoSize = true;
             this.label11.Location = new System.Drawing.Point(151, 452);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(54, 17);
+            this.label11.Size = new System.Drawing.Size(51, 16);
             this.label11.TabIndex = 9;
             this.label11.Text = "label10";
             // 
@@ -388,7 +376,7 @@
             this.lnroCaja.AutoSize = true;
             this.lnroCaja.Location = new System.Drawing.Point(111, 58);
             this.lnroCaja.Name = "lnroCaja";
-            this.lnroCaja.Size = new System.Drawing.Size(54, 17);
+            this.lnroCaja.Size = new System.Drawing.Size(51, 16);
             this.lnroCaja.TabIndex = 9;
             this.lnroCaja.Text = "label10";
             // 
@@ -397,7 +385,7 @@
             this.label10.AutoSize = true;
             this.label10.Location = new System.Drawing.Point(18, 452);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(122, 17);
+            this.label10.Size = new System.Drawing.Size(117, 16);
             this.label10.TabIndex = 8;
             this.label10.Text = "Número Comanda";
             // 
@@ -406,7 +394,7 @@
             this.label9.AutoSize = true;
             this.label9.Location = new System.Drawing.Point(6, 58);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(90, 17);
+            this.label9.Size = new System.Drawing.Size(86, 16);
             this.label9.TabIndex = 8;
             this.label9.Text = "Número Caja";
             // 
@@ -415,7 +403,7 @@
             this.label8.AutoSize = true;
             this.label8.Location = new System.Drawing.Point(6, 313);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(49, 17);
+            this.label8.Size = new System.Drawing.Size(47, 16);
             this.label8.TabIndex = 7;
             this.label8.Text = "Debito";
             // 
@@ -424,7 +412,7 @@
             this.label7.AutoSize = true;
             this.label7.Location = new System.Drawing.Point(6, 281);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(58, 17);
+            this.label7.Size = new System.Drawing.Size(55, 16);
             this.label7.TabIndex = 6;
             this.label7.Text = "Efectivo";
             // 
@@ -433,7 +421,7 @@
             this.label6.AutoSize = true;
             this.label6.Location = new System.Drawing.Point(6, 249);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(83, 17);
+            this.label6.Size = new System.Drawing.Size(78, 16);
             this.label6.TabIndex = 5;
             this.label6.Text = "Monto Total";
             // 
@@ -442,7 +430,7 @@
             this.label5.AutoSize = true;
             this.label5.Location = new System.Drawing.Point(6, 217);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(88, 17);
+            this.label5.Size = new System.Drawing.Size(84, 16);
             this.label5.TabIndex = 4;
             this.label5.Text = "Observación";
             // 
@@ -451,7 +439,7 @@
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(6, 185);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(75, 17);
+            this.label4.Size = new System.Drawing.Size(71, 16);
             this.label4.TabIndex = 3;
             this.label4.Text = "Repartidor";
             // 
@@ -460,7 +448,7 @@
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(6, 153);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(51, 17);
+            this.label3.Size = new System.Drawing.Size(48, 16);
             this.label3.TabIndex = 2;
             this.label3.Text = "Cliente";
             // 
@@ -469,7 +457,7 @@
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(6, 121);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(47, 17);
+            this.label2.Size = new System.Drawing.Size(45, 16);
             this.label2.TabIndex = 1;
             this.label2.Text = "Fecha";
             // 
@@ -478,7 +466,7 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(6, 86);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(58, 17);
+            this.label1.Size = new System.Drawing.Size(55, 16);
             this.label1.TabIndex = 0;
             this.label1.Text = "Número";
             // 
@@ -542,7 +530,6 @@
         private System.Windows.Forms.DataGridView dataGridView2;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Button bACaja;
-        private System.Windows.Forms.Button bImprimir;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Button bActualizar;

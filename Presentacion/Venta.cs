@@ -203,13 +203,7 @@ namespace CapaPresentacion
             
         }
 
-        private void bImprimir_Click(object sender, EventArgs e)
-        {
-            ImprimirComanda impri = new ImprimirComanda();
-            impri.numeroComanda = label11.Text;
-            impri.Show();
-        }
-
+  
         private void bActualizar_Click(object sender, EventArgs e)
         {
             MostrarComanda(lnroCaja.Text);
